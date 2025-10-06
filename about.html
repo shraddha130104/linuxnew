@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student About Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #ffffffdd;
+      padding: 30px 40px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+      /* Animation */
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeSlideIn 0.9s forwards ease;
+    }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357abd;
+    }
+  </style>
+</head>
+<body>
+<nav>
+      <a href="index.html">Home</a>
+      <a href="loginform.html">loginform</a>
+      <a href="#">About</a>
+      <a href="contact.html">contact</a>
+
+    </nav>
+  <div class="form-container">
+    <h2>Student About Form</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+      <label for="class">Class</label>
+      <input type="text" id="class" name="class" placeholder="e.g. 10th Grade" required>
+
+      <label for="about">About You</label>
+      <textarea id="about" name="about" rows="4" placeholder="Write a short bio..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
