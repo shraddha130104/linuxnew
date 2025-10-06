@@ -2,13 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /var/www/html/WordPress
+    destination: /var/www/html
  source: /about.html
-    destination: /var/www/html/WordPress
+    destination: /var/www/html
  source: /contact.html
-    destination: /var/www/html/WordPress
+    destination: /var/www/html
  source: /loginform.html
-    destination: /var/www/html/WordPress
+    destination: /var/www/html
 
 
 hooks:
