@@ -3,6 +3,14 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/WordPress
+ source: /about.html
+    destination: /var/www/html/WordPress
+ source: /contact.html
+    destination: /var/www/html/WordPress
+ source: /loginform.html
+    destination: /var/www/html/WordPress
+
+
 hooks:
   BeforeInstall:
     - location: dep.sh
