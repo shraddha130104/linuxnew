@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /var/www/html
+    destination: /var/www/htmlS
   - source: /about.html
     destination: /var/www/html
   - source: /contact.html
